@@ -1,0 +1,35 @@
+body{
+    min-height: 800px;
+}
+
+header{
+    height: 100px;
+}
+
+main h2{
+    text-align: center;
+    align-content: center;
+}
+#Contenu{
+    display: flex;
+    flex-direction: row;
+}
+
+#Liseret_gauche{
+    float: left;
+    height: 100%;
+    width: 50px;
+    background-color: pink;
+}
+
+#Liseret_droit{
+    float: right;
+    height: 100px;
+    width: 50px;
+    background-color: pink;
+}
+
+footer{
+    align-content: center;
+    text-align: center;
+}
