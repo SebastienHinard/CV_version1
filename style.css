@@ -1,19 +1,24 @@
+/* les caracteristiques principales de la page */
 body{
     max-width: 800px;
     margin: auto;
     margin-bottom: 20px;
     background-color: beige;
-    height:100%;
+    height: 100%;
     text-align:center;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0px 2px 10px black;
 }
 
 /* CONTENU DE L'ENTETE DE PAGE */
 header{
     background-color: orange;
+    width:100%;;
     height: 150px;
     display: flex;
-    flex-flow: wrap row;
-    box-shadow: 0px 10px 10px black;
+    flex-flow: row;
+    box-shadow: 0px 2px 10px black;
 }
 #Nom_Prenom{
     width: 70%;
@@ -25,54 +30,42 @@ header{
 #Maphoto{ border: 2px solid black;}
 /* partie principale de la page */
 main{
-    height:100%;
+    height:80%;;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
 }
 #about_me{
     width:100%;
+    height: auto;
 }
 /* conteneur comportant les 3 sections */
 #Contenu{
     height: 100%;
-    width: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
-/* taille des sections exp, form et compétences */
+/* taille des sections exp, form et c
+    height: 1ompétences */
 section{
     width: 30%;
-    padding: 10px;
 }
 /* taille de la section centre d'intérêt */
 #Interets{
-    width: auto;;
-    padding: 10px;
-}
-
-#marge_gauche{
-    float: left;
-    width: 50px;
-    height: 700px;
-    background: red;
-}
-#marge_droite{
-    float: right;
-    width: 50px;
-    height: 100%;
-    background: red;
+    width: 97%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 /* mise en page du footer */
 footer{
-    /* margin-top: 20px; */
     display: flex;
     flex-flow: column wrap;
     text-align: center;
     background-color: orange;
-    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 2px 10px black;
+    width: 100%;
 }
 /* mise en page pour le texte "contact" */
 #contact{
@@ -84,7 +77,7 @@ footer{
 #Liens{
     margin-bottom: 10px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-around;
 }
 
@@ -97,12 +90,42 @@ footer{
 }
 .grow:hover{
     transform: scale(1.2);
+    transform: rotate(360deg);
 }
 /* effet d'ombrage au passage de la souris */
 .shadow {
     transition: all .2s ease-in-out;
+    box-shadow: 0px 1px 10px black;
 }
 .shadow:hover{
     border-top: 2px black grey;
-    box-shadow: 0px 5px 10px black;
+    box-shadow: 0px 10px 10px black;
+}
+
+
+/* ===============MEDIA QUERIES===================== */
+/* On applique les regles si l'ecran est moins large que 800px. */
+@media all and (max-width: 800px){
+    /* on bascule en mode vertical */
+    #Contenu{
+        flex-direction: column;
+    }
+    /* les sections du CV prennent toute la largeur de l'écran */
+    section, #Interets{
+        width: auto;
+        margin: 20px;
+    }
+    /* le texte "Contact" est inutile, les icones se suffisent à elles-meme */
+    #contact{
+        display: none;
+    }
+    /* on ajuste un peu le footer et les liens */
+    #Liens{
+        margin-bottom: auto;
+    }
+    footer
+    {
+        margin-top: 10px;
+        padding: 10px;
+    }
 }
