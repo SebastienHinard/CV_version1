@@ -1,35 +1,68 @@
 body{
-    min-height: 800px;
+    height: 800px;
+    background-color: beige;
 }
 
 header{
-    height: 100px;
+    background-color: orange;
+    height: 150px;
+    display: flex;
+    flex-flow: wrap row;
 }
 
-main h2{
+#Nom_Prenom{
+    width: 80%;
+    text-align: center;
+}
+
+#Photo{
+    width: 20%;
+    padding-top: 10px;
+}
+
+
+#about_me{
     text-align: center;
     align-content: center;
-}
-#Contenu{
-    display: flex;
-    flex-direction: row;
 }
 
 #Liseret_gauche{
     float: left;
-    height: 100%;
-    width: 50px;
-    background-color: pink;
+    height: inherit;
+    width: 10%;
+    background-image: url("assets/liseret.jpg");
 }
 
 #Liseret_droit{
     float: right;
-    height: 100px;
-    width: 50px;
-    background-color: pink;
+    height: 100%;
+    width: 10%;
+    background-image: url("assets/liseret.jpg");
+}
+
+
+#Contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section{
+    width: 32%;
 }
 
 footer{
-    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
     text-align: center;
+    background-color: orange;
+}
+
+#contact{
+    width: 100%;
+}
+
+#github{
+    flex-shrink: 1;
+    width: 50px;
 }
