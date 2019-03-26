@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Changa" rel="stylesheet">
     <title>CV: Hinard Sébastien</title>
 </head>
 <body>
@@ -20,6 +21,13 @@
         </header>
         <!-- Le contenu princial de la page -->
         <main>
+            <nav class="hidden_menu">
+                <a class="shadow" href="#Experience">Expérience</a>
+                <a class="shadow" href="#Formation">Formation</a>
+                <a class="shadow" href="#Competences">Compétences</a>
+                <a class="shadow" href="#Interets">Centres d'intérêt</a>
+                <a class="shadow" href="#Liens">Contact</a>
+            </nav>
             <!-- encart à propos de moi -->
             <div id="about_me">
                 <h3>A propos de moi:</h3>
@@ -28,8 +36,37 @@
             <!-- section Expérience -->
             <div id="Contenu">
                 <section id="Experience" class="shadow">
-                    <h3>Expérience:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Expérience:</h2>
+                    <h4>De 2010 à 2019: Responsable adjoint (Micromania, Glisy (80) ):</h4>
+                    <ul>
+                        <li>Encadrement de l’équipe et formation des
+nouveaux vendeurs.</li>
+                        <li>Conduite d’entretiens d’embauches.</li>
+                        <li>Suivi et mise en place du marketing.</li>
+                        <li>Etablissement et suivi des objectifs. Analyse
+des résultats et recherche de solutions.</li>
+                        <li>Suivi et résolution des litiges et incidents
+(service après-vente, problèmes de livraison,
+incidents techniques).</li>
+                    </ul>
+                    <h4>De 2006 à 2010: Vendeur (Micromania, Glisy (80) ):</h4>
+                    <ul>
+                        <li>Accueil, conseil et fidélisation de la clientèle.</li>
+                        <li>Vente de produits, ventes additionnelles et de
+services (réservations, garanties), phoning.</li>
+                        <li>Service après vente.</li>
+                        <li>Réception et vérification de marchandises.</li>
+                        <li>Préparations des colis (retours fournisseurs,
+SAV, etc.).</li>
+                        <li>Mise en rayon et théâtralisation des mises en
+avant.</li>
+                    </ul>
+                    <h4>De 2001 à 2005: Employé d'usine -travail saisonnier (RHODIA, Ribécourt (60) )</h4>
+                    <ul>
+                        <li>Chargement de camions citernes, enfûtage.</li>
+                        <li>Entretien du matériel (nettoyage des filtres et
+des cuves)</li>
+                    </ul>
 
                 </section>
                 <!-- section Formation -->
@@ -54,21 +91,36 @@
             <h3 id="contact">Contact:</h3>
             <div id="Liens">
                 <!-- lien github -->
-                <a id="github" href="https://github.com/SebastienHinard" target="_blank">
-                    <span id="bulle_github"></span>
-                    <span id="texte_github"></span>
-                    <img class="grow" src="assets/logo_github.png" alt="Github">
-                    <div></div>
-                </a>
-                <!-- lien email -->
-                <a id="email" href="mailto:se.hinard@gmail.com?subject=Cher%20Monsieur%20Hinard">
-                    <img class="grow" src="assets/logo_mail.png" alt="E-mail">
-                </a>
-                <!-- numéro de téléphone -->
-                <div id =telephone>
-                    <a href="telephone:0676791616">
-                        <img class="grow" src="assets/logo_telephone.png" alt="Telephone">
+                <div class="icon grow">
+                    <a id="github" href="https://github.com/SebastienHinard" target="_blank" title="Prenez le temps de visiter mon Github.">
+                        <img src="assets/logo_github.png" alt="Github">
                     </a>
+                    <p>Github</p>
+                </div>
+                <!-- lien email -->
+                <div class="icon grow">
+                    <a id="email" href="mailto:se.hinard@gmail.com?subject=Cher%20Monsieur%20Hinard" title="N'hésitez pas à m'écrire.">
+                        <img src="assets/logo_mail.png" alt="E-mail">
+                    </a>
+                    <p>se.hinard@gmail.com</p>
+                </div>
+                <!-- numéro de téléphone -->
+                <div class="icon grow">
+                    <div id =telephone>
+                        <a href="tel:+33676791616" title="Appelez-moi si besoin.">
+                            <img src="assets/logo_telephone.png" alt="Telephone">
+                        </a>
+                        <p>0676791616</p>
+                    </div>
+                </div>
+                <!-- numéro de téléphone -->
+                <div class="icon grow">
+                    <div id =printable>
+                        <a href="assets/CV HINARD Sébastien.pdf" target="_blank" title="Pour la version papier, cliquez ici. Attention cependant, il n'est pas à jour">
+                            <img src="assets/logo_imprimer.png" alt="Imprimante">
+                        </a>
+                        <p>Version imprimable</p>
+                    </div>
                 </div>
             </div>
         </footer>
