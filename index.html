@@ -12,11 +12,11 @@
         <!-- entête de la page -->
         <header class="shadow">
             <div id="Nom_Prenom">
-                <h1>Hinard Sébastien</h1>
-                <p>Développeur Web en formation</p>
+                <h1 class="grow">Hinard Sébastien</h1>
+                <p class="grow">Développeur Web en formation</p>
             </div>
             <div id="Photo">
-                <a target= "_blank" href="assets/photo.jpg"><img src="assets/photo_mini.jpg" alt="Ma photo" class="shadow" id="Maphoto"></a>
+                <a target= "_blank" href="assets/photo.jpg"><img  src="assets/photo_mini.jpg" alt="Ma photo" class="shadow" id="Maphoto"></a>
             </div>
         </header>
         <!-- Le contenu princial de la page -->
@@ -30,13 +30,13 @@
             </nav>
             <!-- encart à propos de moi -->
             <div id="about_me">
-                <h3>A propos de moi:</h3>
-                <p>Blah blah blah blah blah blah blah blah blah blah......</p>
+                <h3 class="grow">A propos de moi:</h3>
+                <p class="grow">Après une longue expérience dans la vente, je suis actuellement en formation professionel, afin de me reconvertir dans le métier de développeur Web Junior (FULLSTACK.)</p>
             </div>
             <!-- section Expérience -->
             <div id="Contenu">
                 <section id="Experience" class="shadow">
-                    <h2>Expérience:</h2>
+                    <h2 class="grow">Expérience:</h2>
                     <h4>De 2010 à 2019: Responsable adjoint (Micromania, Glisy (80) ):</h4>
                     <ul>
                         <li>Encadrement de l’équipe et formation des
@@ -71,7 +71,7 @@
                 </section>
                 <!-- section Formation -->
                 <section id="Formation" class="shadow">
-                    <h2>Formation:</h2>
+                    <h2 class="grow">Formation:</h2>
                     <h4>Mars-Septembre 2019 (en cours):</h4>
                     <ul>
                         <li><strong>La MANU Amiens (80):</strong></li>
@@ -110,40 +110,40 @@
                 </section>
                 <!-- section Compétences -->
                 <section id="Competences" class="shadow">
-                    <h2>Compétences:</h2>
+                    <h2 class="grow">Compétences:</h2>
                     <ul>
                         <li>
-                            <img src="assets/logo_html.png" alt="html">
+                            <img class="grow" src="assets/logo_html.png" alt="html">
                             HTML, CSS
                             <p>&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_windows.png" alt="windows">
+                            <img class="grow" src="assets/logo_windows.png" alt="windows">
                             WINDOWS
                             <p>&#11044;&#11044;&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_macos.png" alt="macos">
+                            <img class="grow" src="assets/logo_macos.png" alt="macos">
                             MAC OS
                             <p>&#11044;&#11044;&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_linux.png" alt="linux">
+                            <img class="grow" src="assets/logo_linux.png" alt="linux">
                             LINUX
                             <p>&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_encadrement.png" alt="contact">
+                            <img class="grow" src="assets/logo_encadrement.png" alt="contact">
                             CONTACT CLIENT
                             <p>&#11044;&#11044;&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_manager.png" alt="encadrement">
+                            <img class="grow" src="assets/logo_manager.png" alt="encadrement">
                             ENCADREMENT
                             <p>&#11044;&#11044;&#11044;&#11044;</p>
                         </li>
                         <li>
-                            <img src="assets/logo_english.png" alt="anglais">
+                            <img class="grow" src="assets/logo_english.png" alt="anglais">
                             ANGLAIS
                             <p>&#11044;&#11044;&#11044;&#11044;&#11044;</p>
                         </li>
@@ -151,14 +151,14 @@
                 </section>
                 <!-- section Autres centres d'Interets -->
                 <div id="Interets">
-                    <h3>Autres centres d'intérêt:</h3>
-                    <p>Lorem ipsum dolor sit amet, consecteturit, sed do eiusmot in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3 class="grow">Autres centres d'intérêt:</h3>
+                    <p class="grow">Musique ( pratique de différents instruments et de la MAO ), Cinéma, Informatique, Jeux Vidéo, Sport (badminton et course à pied), intérêts prononcé pour les nouvelles technologies.</p>
                 </div>
             </div>
         </main>
         <!-- Le bas de la page -->
         <footer class="shadow">
-            <h3 id="contact">Contact:</h3>
+            <h3 class="grow" id="contact">Contact:</h3>
             <div id="Liens">
                 <!-- lien github -->
                 <div class="icon grow">
@@ -183,8 +183,18 @@
                         <p>0676791616</p>
                     </div>
                 </div>
-                <!-- numéro de téléphone -->
+                <!-- lien linkedin -->
                 <div class="icon grow">
+                    <div id =linkedin>
+                        <a target="_blank" href="https://www.linkedin.com/in/s%C3%A9bastien-hinard-683593183/" title="Mon profil Linkedin.">
+                            <img src="assets/logo_linkedin.png" alt="Linkedin">
+                        </a>
+                        <p>Mon profil LinkedIn</p>
+                    </div>
+                </div>
+
+                <!-- version pdf du cv -->
+                <div class="icon grow" id=icone_imprime>
                     <div id =printable>
                         <a href="assets/CV HINARD Sébastien.pdf" target="_blank" title="Pour la version papier, cliquez ici. Attention cependant, il n'est pas à jour">
                             <img src="assets/logo_imprimer.png" alt="Imprimante">

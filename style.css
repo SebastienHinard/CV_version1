@@ -192,8 +192,10 @@ footer{
         display: block;
         align-items: center;
     }
-
     #Nom_Prenom p{
+        display: none;
+    }
+    #icone_imprime{
         display: none;
     }
 }
