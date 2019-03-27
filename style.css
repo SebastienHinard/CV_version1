@@ -31,18 +31,33 @@ p{
 #Nom_Prenom p{
     font-size: 150%;
 }
+/* mise en forme des progressbar */
+.Progress_bar{
+    text-align: center;
+    display: inline-flex;
+    background-color: grey;
+    width: 120px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 10px 10px;
+}
+.Progress_value{
+
+    display: block;
+    background-color: green;
+    border-radius: 10px 0px 0px 10px;
+}
+
 
 /* mise en forme du contenu des sections */
 section li, section h4, section p{
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: left!important;
     font-size: 80%;
 }
-
-
 /* CONTENU DE L'ENTETE DE PAGE */
 header{
     margin-top: 10px;
@@ -57,7 +72,6 @@ header{
 #Nom_Prenom{
     width: 70%;
 }
-
 #Photo{
     width: 30%;
     padding-top: 10px;
@@ -89,16 +103,12 @@ section{
     background-color: white;
 }
 
-
-}
 /* taille de la section centre d'intérêt */
 #Interets{
     width: 60%;
     align-self: center;
     height: auto;
 }
-
-
 /* mise en page du footer */
 footer{
     border-radius: 20px 20px 0px 0px;
@@ -133,11 +143,15 @@ footer{
     display: none;
 }
 
+#Compétences{
+    display: flex;
+    flex-direction: row;
+}
 
-
+#skill{
+    margin:10px;
+}
 /* =============== EFFETS VISUELS ===================== */
-
-
 /* effet de grossissment au passage de la souris */
 .grow{
     transition: all .2s ease-in-out;
@@ -145,8 +159,6 @@ footer{
 .grow:hover{
     transform: scale(1.2);
 }
-
-
 /* effet d'ombrage au passage de la souris */
 .shadow {
     transition: all .2s ease-in-out;
@@ -156,7 +168,6 @@ footer{
     border-top: 2px black grey;
     box-shadow: 0px 10px 10px black;
 }
-
 /* elements qui sont suceptibles d'etre masqués */
 .hidden{
     position: relative;
@@ -164,7 +175,6 @@ footer{
     background-color: white;
     padding: 10px;
 }
-
 /* menu caché (n'apparait que lorsque la resolution baisse) */
 .hidden_menu{
     display: none;
@@ -177,20 +187,17 @@ footer{
     color: black;
     font-weight: bold;
 }
-
 /* ===============MEDIA QUERIES===================== */
 @media all and (max-width: 800px) and (min-width: 500px){
+    /* on affiche le petit bonhomme */
     #image_skill{
         display: block;
     }
 
     #Competences{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 }
-
 /* On applique les regles si l'ecran est moins large que 800px. */
 @media all and (max-width: 800px) {
     /* on affiche la fleche qui sert à remonter au menu */
@@ -239,5 +246,4 @@ footer{
     #icone_imprime{
         display: none;
     }
-
 }
