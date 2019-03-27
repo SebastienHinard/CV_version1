@@ -11,14 +11,13 @@ body{
     display: flex;
     flex-flow: row wrap;
 }
+/* fleche up */
 #up_arrow{
     position: fixed;
     bottom: 20px;
     left: 20px;
     display: none;
-
 }
-
 /* mise en forme du texte */
 h1, h2, h3{
     font-family: 'Audiowide', serif;
@@ -72,7 +71,8 @@ main{
     flex-flow: column;
 }
 #about_me{
-    width:100%;
+    width:90%;
+    align-self: center;
     height: auto;
 }
 /* conteneur comportant les 3 sections */
@@ -93,7 +93,9 @@ section{
 }
 /* taille de la section centre d'intérêt */
 #Interets{
-    width: 10%!important;
+    width: 60%;
+    align-self: center;
+    height: auto;
 }
 
 
@@ -237,4 +239,5 @@ footer{
     #icone_imprime{
         display: none;
     }
+
 }
