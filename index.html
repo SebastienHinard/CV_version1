@@ -10,7 +10,7 @@
 </head>
 <body>
         <!-- entête de la page -->
-        <header class="shadow">
+        <header id="header" class="shadow">
             <div id="Nom_Prenom">
                 <h1 class="grow">Hinard Sébastien</h1>
                 <p class="grow">Développeur Web en formation</p>
@@ -31,7 +31,7 @@
             <!-- encart à propos de moi -->
             <div id="about_me">
                 <h3 class="grow">A propos de moi:</h3>
-                <p class="grow">Après une longue expérience dans la vente, je suis actuellement en formation professionel, afin de me reconvertir dans le métier de développeur Web Junior (FULLSTACK.)</p>
+                <p class="grow">Après une longue expérience dans la vente, je suis actuellement en formation professionelle, afin de me reconvertir dans le métier de développeur Web Junior (FULLSTACK).</p>
             </div>
             <!-- section Expérience -->
             <div id="Contenu">
@@ -41,7 +41,7 @@
                     <ul>
                         <li>Encadrement de l’équipe et formation des
                         nouveaux vendeurs.</li>
-                        <li>Conduite d’entretiens d’embauches.</li>
+                        <li>Conduite d’entretiens d’embauche.</li>
                         <li>Suivi et mise en place du marketing.</li>
                         <li>Etablissement et suivi des objectifs. Analyse
                         des résultats et recherche de solutions.</li>
@@ -55,8 +55,8 @@
                         <li>Vente de produits, ventes additionnelles et de
                         services (réservations, garanties), phoning.</li>
                         <li>Service après vente.</li>
-                        <li>Réception et vérification de marchandises.</li>
-                        <li>Préparations des colis (retours fournisseurs,
+                        <li>Réception et vérification des marchandises.</li>
+                        <li>Préparation des colis (retours fournisseurs,
                         SAV, etc.).</li>
                         <li>Mise en rayon et théâtralisation des mises en
                         avant.</li>
@@ -90,7 +90,7 @@
                                 <li>License Langues et Civilisations Etrangères (Anglais).</li>
                                 <li>Approfondissement de la pratique et de la théorie de la langue.</li>
                                 <li>Linguistique, Phonétique.</li>
-                                <li>Civilisation (histoire et politique) Anglaise et Américaine.</li>
+                                <li>Civilisation (histoire et politique) anglaise et américaine.</li>
                             </ul>
                     </ul>
                     <h4>2000-2001</h4>
@@ -110,49 +110,56 @@
                 </section>
                 <!-- section Compétences -->
                 <section id="Competences" class="shadow">
-                    <h2 class="grow">Compétences:</h2>
-                    <ul>
-                        <li>
-                            <img class="grow" src="assets/logo_html.png" alt="html">
-                            HTML, CSS
-                            <p>&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_windows.png" alt="windows">
-                            WINDOWS
-                            <p>&#11044;&#11044;&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_macos.png" alt="macos">
-                            MAC OS
-                            <p>&#11044;&#11044;&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_linux.png" alt="linux">
-                            LINUX
-                            <p>&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_encadrement.png" alt="contact">
-                            CONTACT CLIENT
-                            <p>&#11044;&#11044;&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_manager.png" alt="encadrement">
-                            ENCADREMENT
-                            <p>&#11044;&#11044;&#11044;&#11044;</p>
-                        </li>
-                        <li>
-                            <img class="grow" src="assets/logo_english.png" alt="anglais">
-                            ANGLAIS
-                            <p>&#11044;&#11044;&#11044;&#11044;&#11044;</p>
-                        </li>
-                    </ul>
+                    <!-- cette div est là pour séparer les compétences de l'image cachée -->
+                    <div>
+                        <h2 class="grow">Compétences:</h2>
+                        <ul>
+                            <li>
+                                <img class="grow" src="assets/logo_html.png" alt="html">
+                                HTML, CSS
+                                <p>&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_windows.png" alt="windows">
+                                WINDOWS
+                                <p>&#11044;&#11044;&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_macos.png" alt="macos">
+                                MAC OS
+                                <p>&#11044;&#11044;&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_linux.png" alt="linux">
+                                LINUX
+                                <p>&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_encadrement.png" alt="contact">
+                                CONTACT CLIENT
+                                <p>&#11044;&#11044;&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_manager.png" alt="encadrement">
+                                ENCADREMENT
+                                <p>&#11044;&#11044;&#11044;&#11044;</p>
+                            </li>
+                            <li>
+                                <img class="grow" src="assets/logo_english.png" alt="anglais">
+                                ANGLAIS
+                                <p>&#11044;&#11044;&#11044;&#11044;&#11044;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Cette div est là pour l'image cachée -->
+                    <div id="image_skill">
+                        <img src="assets/icone_skill.png" alt="">
+                    </div>
                 </section>
                 <!-- section Autres centres d'Interets -->
                 <div id="Interets">
                     <h3 class="grow">Autres centres d'intérêt:</h3>
-                    <p class="grow">Musique ( pratique de différents instruments et de la MAO ), Cinéma, Informatique, Jeux Vidéo, Sport (badminton et course à pied), intérêts prononcé pour les nouvelles technologies.</p>
+                    <p class="grow">Musique ( pratique de différents instruments et de la MAO ), Cinéma, Informatique, Jeux Vidéo, Sport (badminton et course à pied), intérêt prononcé pour les nouvelles technologies.</p>
                 </div>
             </div>
         </main>
@@ -204,5 +211,9 @@
                 </div>
             </div>
         </footer>
-</body>
+        <!-- fleche pour remonter en haut de page -->
+        <a href="#header">
+            <img class="grow" id ="up_arrow" src="assets/up_boy.gif" alt="up_boy">
+        </a>
+    </body>
 </html>
